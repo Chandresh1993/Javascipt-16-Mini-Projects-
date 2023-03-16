@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur fugiat dolore provident perspiciatis accusamus quod delectus labore rem nesciunt! Illum voluptate aliquam dolorum et iusto ratione? Quas, placeat corrupti!</p>
+
+
+
+    </div>
+    <button id="btn" onclick="hide()">  Show & hide</button>
+
+    <script>
+        let para =document.getElementById('para');
+        para.addEventListener('mouseover',function run (){
+            alert("mouse Inside.")
+
+        })
+
+        para.addEventListener('mouseout',function run (){
+            alert("mouse outside.")
+
+        })
+
+        function hide(){
+           let btn =document.getElementById('btn');
+           let para =document.getElementById('para');
+           if (para.style.display != 'none'){
+           para.style.display = "none";
+        }
+        else {
+            para.style.display="block"
+        }
+
+    }
+    </script>
+    
+</body>
+</html>
